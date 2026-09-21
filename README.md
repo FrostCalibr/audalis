@@ -32,7 +32,7 @@ Options:
 | --- | --- |
 | *(none)* | User install into `~/.local`, no sudo needed |
 | `--system` | System-wide install into `/usr` (prompts for sudo) |
-| `--no-pip` | Skip the package step; reuse an existing `audalis` install |
+| `--no-pip` | Skip the package step; reuse an existing `audalis` install. This also skips code updates, so after pulling changes re-run the installer *without* this flag |
 
 The installer resolves the actual `audalis` binary path, so the desktop
 entry works regardless of where the package lands.
