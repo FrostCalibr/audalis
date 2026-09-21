@@ -23,6 +23,21 @@ pip install --break-system-packages -e ".[dev]"  # + pytest
 Dependencies: `PySide6` (GUI), plus `pactl` and `amixer` on your system
 (usually shipped with PipeWire/PulseAudio and ALSA utilities).
 
+### Desktop install
+
+One-shot installer that installs the package and registers Audalis as a
+desktop application (entry + icon):
+
+```sh
+./packaging/install.sh            # user install → ~/.local (no sudo)
+./packaging/install.sh --system   # system install → /usr (uses sudo)
+./packaging/install.sh --no-pip   # skip the package step (reuse existing install)
+```
+
+The installer resolves the actual `audalis` binary path, so the desktop
+entry works regardless of prefix. Uninstallation is manual: delete the
+files listed at the end of the install output.
+
 ## GUI
 
 ```sh
