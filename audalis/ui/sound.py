@@ -67,7 +67,7 @@ class SoundTester(QObject):
     def play_tone(self) -> bool:
         if self._tone is None:
             self._tone = self._tmpdir / "audalis-tone.wav"
-            self._tone.write_bytes(_sine_frames(440.0, 0.45))
+            self._write_wav(self._tone, _sine_frames(440.0, 0.45), channels=2)
         return self._play_file(self._tone, on_done=self.toneDone.emit)
 
     def play_confirm(self) -> bool:
