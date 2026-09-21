@@ -1,0 +1,130 @@
+Card #43
+	Name: alsa_card.pci-0000_00_1f.3
+	Driver: alsa
+	Owner Module: n/a
+	Properties:
+		device.enum.api = "udev"
+		device.api = "alsa"
+		media.class = "Audio/Device"
+		api.alsa.path = "hw:0"
+		api.alsa.card = "0"
+		api.alsa.card.name = "HDA Intel PCH"
+		api.alsa.card.longname = "HDA Intel PCH at 0x6003230000 irq 153"
+		device.plugged.usec = "4690322"
+		device.bus_path = "pci-0000:00:1f.3"
+		sysfs.path = "/devices/pci0000:00/0000:00:1f.3/sound/card0"
+		device.bus = "pci"
+		device.subsystem = "sound"
+		device.vendor.id = "0x8086"
+		device.vendor.name = "Intel Corporation"
+		device.product.id = "0xa0c8"
+		device.product.name = "500 Series Chipset Family On-Package High Definition Audio (HD Audio)"
+		device.form_factor = "internal"
+		device.name = "alsa_card.pci-0000_00_1f.3"
+		device.description = "Built-in Audio"
+		device.nick = "HDA Intel PCH"
+		device.icon_name = "audio-card-analog-pci"
+		api.alsa.use-acp = "true"
+		api.acp.auto-profile = "false"
+		api.acp.auto-port = "false"
+		api.dbus.ReserveDevice1.Priority = "-20"
+		api.alsa.split-enable = "true"
+		api.dbus.ReserveDevice1 = "Audio0"
+		spa.object.id = "2"
+		factory.id = "15"
+		client.id = "42"
+		object.id = "43"
+		object.serial = "43"
+		object.path = "alsa:acp:PCH"
+		alsa.card = "0"
+		alsa.card_name = "HDA Intel PCH"
+		alsa.long_card_name = "HDA Intel PCH at 0x6003230000 irq 153"
+		alsa.driver_name = "snd_hda_intel"
+		alsa.mixer_name = "Realtek ALC236"
+		alsa.components = "HDA:10ec0236,103c87fe,00100002 HDA:80862812,80860101,00100000"
+		alsa.id = "PCH"
+		device.string = "0"
+	Profiles:
+		off: Off (sinks: 0, sources: 0, priority: 0, available: yes)
+		output:analog-stereo+input:analog-stereo: Analog Stereo Duplex (sinks: 1, sources: 1, priority: 6565, available: yes)
+		output:analog-stereo: Analog Stereo Output (sinks: 1, sources: 0, priority: 6500, available: yes)
+		output:hdmi-stereo+input:analog-stereo: Digital Stereo (HDMI) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 5965, available: yes)
+		output:hdmi-stereo: Digital Stereo (HDMI) Output (sinks: 1, sources: 0, priority: 5900, available: yes)
+		output:hdmi-stereo-extra1+input:analog-stereo: Digital Stereo (HDMI 2) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 5765, available: no)
+		output:hdmi-stereo-extra2+input:analog-stereo: Digital Stereo (HDMI 3) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 5765, available: no)
+		output:hdmi-stereo-extra3+input:analog-stereo: Digital Stereo (HDMI 4) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 5765, available: no)
+		output:hdmi-stereo-extra1: Digital Stereo (HDMI 2) Output (sinks: 1, sources: 0, priority: 5700, available: no)
+		output:hdmi-stereo-extra2: Digital Stereo (HDMI 3) Output (sinks: 1, sources: 0, priority: 5700, available: no)
+		output:hdmi-stereo-extra3: Digital Stereo (HDMI 4) Output (sinks: 1, sources: 0, priority: 5700, available: no)
+		output:hdmi-surround+input:analog-stereo: Digital Surround 5.1 (HDMI) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 865, available: yes)
+		output:hdmi-surround71+input:analog-stereo: Digital Surround 7.1 (HDMI) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 865, available: yes)
+		output:hdmi-surround: Digital Surround 5.1 (HDMI) Output (sinks: 1, sources: 0, priority: 800, available: yes)
+		output:hdmi-surround71: Digital Surround 7.1 (HDMI) Output (sinks: 1, sources: 0, priority: 800, available: yes)
+		output:hdmi-surround-extra1+input:analog-stereo: Digital Surround 5.1 (HDMI 2) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 665, available: no)
+		output:hdmi-surround71-extra1+input:analog-stereo: Digital Surround 7.1 (HDMI 2) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 665, available: no)
+		output:hdmi-surround-extra2+input:analog-stereo: Digital Surround 5.1 (HDMI 3) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 665, available: no)
+		output:hdmi-surround71-extra2+input:analog-stereo: Digital Surround 7.1 (HDMI 3) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 665, available: no)
+		output:hdmi-surround-extra3+input:analog-stereo: Digital Surround 5.1 (HDMI 4) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 665, available: no)
+		output:hdmi-surround71-extra3+input:analog-stereo: Digital Surround 7.1 (HDMI 4) Output + Analog Stereo Input (sinks: 1, sources: 1, priority: 665, available: no)
+		output:hdmi-surround-extra1: Digital Surround 5.1 (HDMI 2) Output (sinks: 1, sources: 0, priority: 600, available: no)
+		output:hdmi-surround71-extra1: Digital Surround 7.1 (HDMI 2) Output (sinks: 1, sources: 0, priority: 600, available: no)
+		output:hdmi-surround-extra2: Digital Surround 5.1 (HDMI 3) Output (sinks: 1, sources: 0, priority: 600, available: no)
+		output:hdmi-surround71-extra2: Digital Surround 7.1 (HDMI 3) Output (sinks: 1, sources: 0, priority: 600, available: no)
+		output:hdmi-surround-extra3: Digital Surround 5.1 (HDMI 4) Output (sinks: 1, sources: 0, priority: 600, available: no)
+		output:hdmi-surround71-extra3: Digital Surround 7.1 (HDMI 4) Output (sinks: 1, sources: 0, priority: 600, available: no)
+		input:analog-stereo: Analog Stereo Input (sinks: 0, sources: 1, priority: 65, available: no)
+		pro-audio: Pro Audio (sinks: 5, sources: 1, priority: 1, available: yes)
+	Active Profile: output:hdmi-stereo+input:analog-stereo
+	Ports:
+		analog-input-mic: Microphone (type: Mic, priority: 8700, latency offset: 0 usec, availability group: Legacy 1, not available)
+			Properties:
+				port.type = "mic"
+				port.availability-group = "Legacy 1"
+				device.icon_name = "audio-input-microphone"
+				card.profile.port = "0"
+			Part of profile(s): input:analog-stereo, output:analog-stereo+input:analog-stereo, output:hdmi-stereo+input:analog-stereo, output:hdmi-surround+input:analog-stereo, output:hdmi-surround71+input:analog-stereo, output:hdmi-stereo-extra1+input:analog-stereo, output:hdmi-surround-extra1+input:analog-stereo, output:hdmi-surround71-extra1+input:analog-stereo, output:hdmi-stereo-extra2+input:analog-stereo, output:hdmi-surround-extra2+input:analog-stereo, output:hdmi-surround71-extra2+input:analog-stereo, output:hdmi-stereo-extra3+input:analog-stereo, output:hdmi-surround-extra3+input:analog-stereo, output:hdmi-surround71-extra3+input:analog-stereo
+		analog-output-speaker: Speakers (type: Speaker, priority: 10000, latency offset: 0 usec, availability group: Legacy 2, availability unknown)
+			Properties:
+				port.type = "speaker"
+				port.availability-group = "Legacy 2"
+				device.icon_name = "audio-speakers"
+				card.profile.port = "1"
+			Part of profile(s): output:analog-stereo, output:analog-stereo+input:analog-stereo
+		analog-output-headphones: Headphones (type: Headphones, priority: 9900, latency offset: 0 usec, availability group: Legacy 3, not available)
+			Properties:
+				port.type = "headphones"
+				port.availability-group = "Legacy 3"
+				device.icon_name = "audio-headphones"
+				card.profile.port = "2"
+			Part of profile(s): output:analog-stereo, output:analog-stereo+input:analog-stereo
+		hdmi-output-0: HDMI / DisplayPort (type: HDMI, priority: 5900, latency offset: 0 usec, availability group: Legacy 4, available)
+			Properties:
+				port.type = "hdmi"
+				port.availability-group = "Legacy 4"
+				device.icon_name = "video-display"
+				card.profile.port = "3"
+				device.product.name = "L32FBC"
+				iec958.codecs.detected = "[\"PCM\"]"
+				audio.channels.detected = "2"
+			Part of profile(s): output:hdmi-stereo, output:hdmi-stereo+input:analog-stereo, output:hdmi-surround, output:hdmi-surround+input:analog-stereo, output:hdmi-surround71, output:hdmi-surround71+input:analog-stereo
+		hdmi-output-1: HDMI / DisplayPort 2 (type: HDMI, priority: 5800, latency offset: 0 usec, availability group: Legacy 5, not available)
+			Properties:
+				port.type = "hdmi"
+				port.availability-group = "Legacy 5"
+				device.icon_name = "video-display"
+				card.profile.port = "4"
+			Part of profile(s): output:hdmi-stereo-extra1, output:hdmi-stereo-extra1+input:analog-stereo, output:hdmi-surround-extra1, output:hdmi-surround-extra1+input:analog-stereo, output:hdmi-surround71-extra1, output:hdmi-surround71-extra1+input:analog-stereo
+		hdmi-output-2: HDMI / DisplayPort 3 (type: HDMI, priority: 5700, latency offset: 0 usec, availability group: Legacy 6, not available)
+			Properties:
+				port.type = "hdmi"
+				port.availability-group = "Legacy 6"
+				device.icon_name = "video-display"
+				card.profile.port = "5"
+			Part of profile(s): output:hdmi-stereo-extra2, output:hdmi-stereo-extra2+input:analog-stereo, output:hdmi-surround-extra2, output:hdmi-surround-extra2+input:analog-stereo, output:hdmi-surround71-extra2, output:hdmi-surround71-extra2+input:analog-stereo
+		hdmi-output-3: HDMI / DisplayPort 4 (type: HDMI, priority: 5600, latency offset: 0 usec, availability group: Legacy 7, not available)
+			Properties:
+				port.type = "hdmi"
+				port.availability-group = "Legacy 7"
+				device.icon_name = "video-display"
+				card.profile.port = "6"
+			Part of profile(s): output:hdmi-stereo-extra3, output:hdmi-stereo-extra3+input:analog-stereo, output:hdmi-surround-extra3, output:hdmi-surround-extra3+input:analog-stereo, output:hdmi-surround71-extra3, output:hdmi-surround71-extra3+input:analog-stereo
