@@ -61,7 +61,16 @@ else
   else
     python3 -m pip install --break-system-packages "$PKG_ROOT"
   fi
-  LAUNCHER="$(command -v audalis 2>/dev/null || echo "$LAUNCHER")"
+  if command -v audalis >/dev/null 2>&1; then
+    LAUNCHER="$(command -v audalis)"
+  else
+    for cand in "$PREFIX/bin/audalis" /usr/local/bin/audalis "$HOME/.local/bin/audalis"; do
+      if [ -x "$cand" ]; then
+        LAUNCHER="$cand"
+        break
+      fi
+    done
+  fi
 fi
 
 echo "==> installing desktop entry and icon"

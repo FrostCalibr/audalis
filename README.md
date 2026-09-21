@@ -15,28 +15,59 @@ like "headset microphone doesn't work" or "headphones don't switch".
 
 Requires Python ≥ 3.10 and a running PipeWire/PulseAudio session.
 
+### Quick start (desktop app)
+
+```sh
+git clone https://github.com/FrostCalibr/audalis.git
+cd audalis
+./packaging/install.sh
+```
+
+This installs the package and registers Audalis as a desktop application
+(launcher entry + icon). Launch it from your app menu, or run `audalis`.
+
+Options:
+
+| Option | Effect |
+| --- | --- |
+| *(none)* | User install into `~/.local`, no sudo needed |
+| `--system` | System-wide install into `/usr` (prompts for sudo) |
+| `--no-pip` | Skip the package step; reuse an existing `audalis` install |
+
+The installer resolves the actual `audalis` binary path, so the desktop
+entry works regardless of where the package lands.
+
+### Manual install (pip)
+
 ```sh
 pip install --break-system-packages -e .          # GUI + CLI
 pip install --break-system-packages -e ".[dev]"  # + pytest
 ```
 
-Dependencies: `PySide6` (GUI), plus `pactl` and `amixer` on your system
-(usually shipped with PipeWire/PulseAudio and ALSA utilities).
+### Dependencies
 
-### Desktop install
+- `PySide6` (GUI) — installed automatically with the package
+- `pactl` and `amixer` system utilities (usually shipped with
+  PipeWire/PulseAudio and ALSA utilities)
 
-One-shot installer that installs the package and registers Audalis as a
-desktop application (entry + icon):
+### What gets installed
+
+| Install mode | Desktop entry | Icon | Launcher |
+| --- | --- | --- | --- |
+| user | `~/.local/share/applications/audalis.desktop` | `~/.local/share/icons/.../audalis.svg` | `~/.local/bin/audalis` |
+| system | `/usr/share/applications/audalis.desktop` | `/usr/share/icons/.../audalis.svg` | `/usr/local/bin/audalis` |
+
+### Uninstalling
+
+Delete the desktop entry and icon, then uninstall the package:
 
 ```sh
-./packaging/install.sh            # user install → ~/.local (no sudo)
-./packaging/install.sh --system   # system install → /usr (uses sudo)
-./packaging/install.sh --no-pip   # skip the package step (reuse existing install)
+rm ~/.local/share/applications/audalis.desktop
+rm ~/.local/share/icons/hicolor/scalable/apps/audalis.svg
+python3 -m pip uninstall audalis
 ```
 
-The installer resolves the actual `audalis` binary path, so the desktop
-entry works regardless of prefix. Uninstallation is manual: delete the
-files listed at the end of the install output.
+For a `--system` install, use the `/usr` paths above with `sudo`.
 
 ## GUI
 
